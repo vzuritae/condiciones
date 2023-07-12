@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Condiciones</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="condiciones">
+            <p>Condiciones</p>
+        </div>
+        <div class="enlaces">
+            <a href="#ejercicio-1">Ejercicio 1</a>
+            <a href="#ejercicio-2">Ejercicio 2</a>
+            <a href="#ejercicio-3">Ejercicio 3</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!--ejercicio 1-->
+
+        <section id="ejercicio-1">
+            <h2>Ejercicio 1</h2>
+            <img onclick="imagen()" class="img" src="./assets/imgs/baby_yoda.jpg" alt="Baby Yoda">
+            <a href="#navbar">Volver al inicio</a>
+        </section>
+        
+        <!--ejercicio 2-->
+
+        <section id="ejercicio-2">
+            <h2>Ejercicio 2</h2>
+            <p>Puedes llevar hasta 10 stickers en total</p>
+            <div class="stickers">
+                <div class="sticker">
+                    <img src="./assets/imgs/toad.jpg" alt="Sticker Toad">
+                    <input id="input-1" type="number" min="0">
+                </div>
+        
+                <div class="sticker">
+                    <img src="./assets/imgs/star.jpg" alt="Sticker Star">
+                    <input id="input-2" type="number" min="0">
+                </div>
+        
+                <div class="sticker">
+                    <img src="./assets/imgs/flower.jpg" alt="Sticker Flower">
+                    <input id="input-3" type="number" min="0">
+                </div>
+            </div>
+            <p class="resultado-stickers"></p>
+            <button class="button-stickers" onclick="stickers()">Verificar</button>
+            <a href="#navbar">Volver al inicio</a>
+        </section>
+
+        <!--ejercicio 3-->
+    
+        <section id="ejercicio-3">
+            <h2>Ejercicio 3</h2>
+            <p>Ingresa el password</p>
+            <div class="select">
+                <select id="select-1">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                    
+                <select id="select-2">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+
+                <select id="select-3">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+            <button class="button-pass" onclick="password()">Ingresar</button>
+            <p class="resultado-pass"></p>
+            <a href="#navbar">Volver al inicio</a>
+        </section>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
